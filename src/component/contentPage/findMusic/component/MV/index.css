@@ -1,0 +1,31 @@
+.mv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.catain{
+    width:22%;
+    height:200px;
+    margin-right:20px;
+    margin-bottom:20px;
+    position:relative
+}
+.tips{
+    position:absolute;
+    background-color:rgba(0,0,0,0.5);
+    height:30px;
+    width:100%;
+    color:white;
+    text-align:center;
+    display: none;
+}
+.catain:hover .tips{
+    display: block;
+}

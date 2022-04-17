@@ -1,0 +1,18 @@
+.music_logo{
+    display: flex;
+    align-items: center;
+}
+.music_search{
+    height: 30px;
+    width: 180px;
+    background-color:rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.user{
+    display: flex;
+    align-items: center;
+}

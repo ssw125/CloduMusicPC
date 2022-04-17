@@ -1,0 +1,41 @@
+.tabs{
+    width:100%;
+    display:flex;
+    margin: 20px 0;
+}
+.tabs div{
+    color: #888888;
+    height: 40px;
+    text-align: left;
+    line-height: 40px;
+}
+.tabs div:hover{
+    background-color: #f0f1f2;
+}
+.songlist .item{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    color: #888888;
+    font-size: 20px;
+    cursor: pointer;
+}
+.songlist .item:focus{
+    background-color: #e5e5e5 !important;
+}
+.songlist .item:nth-child(2n-1){
+    background-color: #f9f9f9;
+}
+.songlist .item:hover{
+    background-color: #f0f1f2;
+}
+
+.limit{
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+}
+/* input[type='checkbox']:checked+label{
+    color: red;
+} */

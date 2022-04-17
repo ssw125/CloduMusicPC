@@ -1,0 +1,24 @@
+.des{
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+.icon{
+    font-size:30px;
+    color:white;
+    position:absolute;
+    top:150px;
+    left: 140px;
+    display: none;
+}
+.contt{
+    width:180px;
+    margin:20px;
+    cursor:pointer;
+    position:relative
+}
+.contt:hover .icon{
+    display: block;
+}
+
