@@ -31,6 +31,15 @@ class Request {
         })
     }
 
+    Check_Captcha(phone,captcha){
+        return this.instance.get("/captcha/verify",{
+            params:{
+                phone,
+                captcha
+            }
+        })
+    }
+
     GET_Tag(){
         return this.instance.get('/mv/first',{
             params:{
@@ -73,6 +82,30 @@ class Request {
 
     LoginOut(){
         return this.instance.get('/logout')
+    }
+
+    //生成二维码key
+    getQR_key(){
+        return this.instance.get('/login/qr/key')
+    }
+
+    //生成二维码base64图片
+    getQR_pir(keys){
+        return this.instance.get('/login/qr/create',{
+            params:{
+                key:keys,
+                qrimg:true
+            }
+        })
+    }
+
+    //获取二维码state
+    getQR_state(keys){
+        return this.instance.get('/login/qr/check',{
+            params:{
+                key:keys
+            }
+        })
     }
 }
 

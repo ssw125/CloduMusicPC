@@ -17,10 +17,19 @@ module.exports = {
             transform:'translateY(0px)',
             opacity:'1'
           }
+        },
+        float:{
+          '0%':{
+            transform:'translateY(0px)',
+          },
+          '100%':{
+            transform:'translateY(-20px)',
+          }
         }
       },
       animation: {
         show: 'show .5s ease-in-out',
+        float:'float .5s forwards'
       }
     },
   },
