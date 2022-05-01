@@ -33,7 +33,7 @@ export default function Head() {
     </Modal>
    <div className='music_logo'>
     <img src={Icon} alt="failed" style={{height:'30px',width:'30px',borderRadius:'15px'}}></img>
-    <div style={{color:'white',fontSize:'25px',lineHeight: '30px',height: '34px',marginLeft:'10px'}}>网易云音乐</div>
+    <div className='hidden tablet:block' style={{color:'white',fontSize:'25px',lineHeight: '30px',height: '34px',marginLeft:'10px'}}>网易云音乐</div>
   </div>
   <div className='music_search'>
     <Form style={{height:35}}>
@@ -53,7 +53,7 @@ export default function Head() {
         <div className='h-1/2 justify-center flex items-center hover:bg-gray-200 cursor-pointer' onClick={isoutLogin}>退出登录</div>
       </div>
     </div>
-    <span style={{color:'white'}}>{userInfo?.nickname?userInfo.nickname:'未登录'}</span>
+    <span className=' hidden tablet:inline' style={{color:'white'}}>{userInfo?.nickname?userInfo.nickname:'未登录'}</span>
   </div>
   </>
   )

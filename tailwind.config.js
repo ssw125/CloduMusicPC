@@ -3,6 +3,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens:{
+      'tablet':'840px',
+      'xl':'1220px'
+    },
     extend: {
       flexGrow: {
         '2': 2

@@ -3,7 +3,8 @@ import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import FindMusic from "../component/contentPage/findMusic";
 import SongList from "../component/SongList";
-import Exclusive from "../component/contentPage/findMusic/component/Exclusive";
+import Exclusive from "../component/contentPage/findMusic/Pages/Exclusive"
+import Recommend from "../component/contentPage/findMusic/Pages/recomment";
 export const routes = [{
     path:'/home',
     element:<Home/>,
@@ -11,11 +12,14 @@ export const routes = [{
         path:'findmusic',
         element:<FindMusic></FindMusic>,
         children:[{
-            path:'recomment',
-            element:<Navigate to="/home/findmusic"></Navigate>,
+            path:'/home/findmusic',
+            element:<Navigate to="/home/findmusic/recmusic"></Navigate>,
         },{
             path:'exclusive',
             element:<Exclusive></Exclusive>
+        },{
+            path:'recmusic',
+            element:<Recommend></Recommend>
         }]
     },{
         path:'songlist/:index/:id',
@@ -26,5 +30,5 @@ export const routes = [{
     element:<Login/>
 },{
     path:'/',
-    element:<Navigate to="/home"></Navigate>
+    element:<Navigate to="/home/findmusic"></Navigate>
 }]

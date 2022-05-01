@@ -5,16 +5,13 @@ display: -webkit-box;
 -webkit-line-clamp: 2;
 }
 .icon{
-    font-size:30px;
+    font-size:2rem;
     color:white;
     position:absolute;
-    top:150px;
-    left: 140px;
     display: none;
 }
 .contt{
-    width:180px;
-    margin:20px;
+    width:18%;
     cursor:pointer;
     position:relative
 }
